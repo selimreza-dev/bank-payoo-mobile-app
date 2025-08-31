@@ -1,5 +1,6 @@
-document.getElementById('login-btn')
-    .addEventListener('click', function (event) {
+const logInBtn = document.getElementById('login-btn')
+if (logInBtn) {
+    logInBtn.addEventListener('click', function (event) {
         event.preventDefault();
         const savedMobileNumber = '01768873518';
         const savedPinNumber = '1122';
@@ -29,3 +30,12 @@ document.getElementById('login-btn')
         }
 
     })
+}
+
+// Logout function
+const logOutBtn = document.getElementById('log-out-btn');
+if (logOutBtn) {
+    logOutBtn.addEventListener('click', function () {
+        window.location.href = '../index.html';
+    })
+}

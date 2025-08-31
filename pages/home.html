@@ -5,10 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/cd231dce85.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>I am Home Page</h1>
+<body class="bg-[#F4F5F7] h-[100vh]">
+    <!-- header section -->
+    <header class="max-w-md mx-auto border-b border-gray-300 bg-white">
+        <nav class="flex justify-between items-center pb-3 p-3 ">
+            <!-- logo and amount -->
+            <div class="logo-amount flex">
+                <div class="logo max-w-1/4">
+                    <img src="../assets/Group.png" alt="Logo">
+                </div>
+                <div class="amount ml-2">
+                    <h2 class="font-extrabold text-black">$<span>45000</span></h2>
+                    <p class="text-[#8d8d8d]">Available Balance</p>
+                </div>
+            </div>
+            <!-- log out -->
+            <div class="log-out">
+                <button id="log-out-btn"
+                    class="btn border border-[#9e9e9e] bg-[#FFFFFF] hover:bg-gray-100 text-gray-500 font-light"><i
+                        class="fa-solid fa-right-from-bracket rotate-180 mr-1 text-gray-700"></i>
+                    Log
+                    Out</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main area -->
+    <main class="max-w-md mx-auto">
+        <!-- hero welcome text -->
+        <section class="pt-5 pb-5 pl-3 pr-3 bg-white">
+            <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
+            <p class="text-gray-500 text-[14px]">Enjoy easy and convenient financial services with us. Cashout charge is
+                low and</p>
+        </section>
+
+        <!-- main card Section -->
+        <section class="cards pt-5 pb-7 pl-3 pr-3 bg-white grid grid-cols-3 gap-3 rounded-bl-2xl rounded-br-2xl">
+            <div class="card-item border border-gray-300 p-2 pt-4 pb-4 rounded-xl text-center">
+                <img class="mx-auto mb-2" src="../assets/wallet1.png" alt="Wallet">
+                <p class="text-[13px]">Add Money</p>
+            </div>
+
+            <div class="card-item border border-gray-300 p-2 pt-4 pb-4 rounded-xl text-center">
+                <img class="mx-auto mb-2" src="../assets/send1.png" alt="Wallet">
+                <p class="text-[13px]">Cashout</p>
+            </div>
+
+            <div class="card-item border border-gray-300 p-2 pt-4 pb-4 rounded-xl text-center">
+                <img class="mx-auto mb-2" src="../assets/money1.png" alt="Wallet">
+                <p class="text-[13px]">Transfer Money</p>
+            </div>
+
+            <div class="card-item border border-gray-300 p-2 pt-4 pb-4 rounded-xl text-center">
+                <img class="mx-auto mb-2" src="../assets/bonus1.png" alt="Wallet">
+                <p class="text-[13px]">Get Bonus</p>
+            </div>
+
+            <div class="card-item border border-gray-300 p-2 pt-4 pb-4 rounded-xl text-center">
+                <img class="mx-auto mb-2" src="../assets/purse1.png" alt="Wallet">
+                <p class="text-[13px]">Pay Bill</p>
+            </div>
+
+            <div class="card-item border border-gray-300 p-2 pt-4 pb-4 rounded-xl text-center">
+                <img class="mx-auto mb-2" src="../assets/transaction1.png" alt="Wallet">
+                <p class="text-[13px]">Transactions</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- script -->
+    <script src="../script.js"></script>
 </body>
 
 </html>
